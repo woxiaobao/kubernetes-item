@@ -1,0 +1,21 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: nginx-depl
+spec:
+  replicas: 4
+  template:
+    metadata:
+      labels:
+        app: nginx
+    spec:
+      containers:
+        - name: nginx
+          image: 10.200.141.156/item/nginx:v1
+          ports:
+           - containerPort: 80
+          resources: 
+            limits:
+              cpu: 100m
+            requests: 
+              cpu: 100m
