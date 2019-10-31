@@ -40,6 +40,9 @@ user User12345
 ```
 **我在安装k8s前，已经把需要的镜像文件都放在私库中了，可以登录查看**
 
+![Image text](https://github.com/woxiaobao/kubernetes-item/blob/master/img-folder/harbor.png)
+
+
 ### k8s yum安装过程
 kubernetes  v1.5.2
 
@@ -328,6 +331,7 @@ kubectl get all --namespace=kube-system
 ```
 http://10.200.141.154:8080/ui/
 ```
+![Image text](https://github.com/woxiaobao/kubernetes-item/blob/master/img-folder/dashboard.png)
 
 创建HPA，pod最小数量1，pod最大数量8，cpu使用率百分比作为触发条件
 ```
